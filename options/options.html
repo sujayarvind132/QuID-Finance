@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><link rel="stylesheet" href="options.css"></head>
+<body>
+  <h2>QuID Finance — Options</h2>
+  <div>
+    <h3>Broker API setup</h3>
+    <p>Zerodha and Upstox APIs require a backend proxy. Enter your backend endpoint:</p>
+    <label>Backend base URL <input id="backendUrl" placeholder="https://your-backend.example.com"></label>
+  </div>
+  <div>
+    <h3>Alpha Vantage API (fallback)</h3>
+    <label>API Key <input id="alphaKey" placeholder="Your Alpha Vantage Key"></label>
+  </div>
+  <div>
+    <h3>Yahoo usage</h3>
+    <p>Yahoo Finance is used as a fallback for historical data via public endpoints.</p>
+  </div>
+  <button id="save">Save</button>
+  <script src="options.js"></script>
+</body>
+</html>
