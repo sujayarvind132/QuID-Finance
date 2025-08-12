@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="row">
+    <label>Exchange</label>
+    <select id="exchange">
+      <option value="NSE" selected>NSE</option>
+    </select>
+  </div>
+  <div class="row">
+    <label>Symbol</label>
+    <input id="symbol" placeholder="e.g., INFY">
+    <button id="search">Search</button>
+  </div>
+  <div class="row">
+    <label>Timeframe</label>
+    <select id="interval">
+      <option value="1d">Daily</option>
+      <option value="15m" selected>15m</option>
+      <option value="5m">5m</option>
+    </select>
+  </div>
+  <div class="row">
+    <label><input type="checkbox" id="autoDisable" checked> Auto-disable when closed</label>
+  </div>
+  <div class="row">
+    <label>Data Provider Fallbacks</label>
+    <div class="small">NSE → Zerodha/Upstox (if configured) → Yahoo → Alpha Vantage</div>
+  </div>
+  <div class="row">
+    <button id="save">Save</button>
+  </div>
+  <div class="footer">QuID Finance</div>
+<script src="popup.js"></script>
+</body>
+</html>
